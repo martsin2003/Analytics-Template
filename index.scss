@@ -29,7 +29,7 @@ html {
   &__menu {
     width: 300px;
     height: 100%;
-    background: blue;
+    background: white;
     transform: translateX(-300px);
     animation: translate 0.4s;
     animation-fill-mode: forwards;
@@ -46,5 +46,37 @@ html {
     width: calc(100% - 300px);
     height: 100%;
     overflow-y: auto;
+  }
+  &__header {
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    padding: 16px;
+    margin: 5px 0px;
+  }
+  &__header-photo {
+    width: 34%;
+    align-items: center;
+  }
+  &__photo-avatars {
+    width: 46px;
+    border-radius: 50%;
+  }
+  &__title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  &__button {
+    padding: 8px 16px;
+    display: flex;
+    text-align: center;
+  }
+  &__fa {
+    color: #000;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
   }
 }
