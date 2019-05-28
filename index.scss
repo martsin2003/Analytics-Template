@@ -41,39 +41,42 @@ html {
         transform: translateX(0px);
       }
     }
+    &__header {
+      font-size: 15px;
+      font-family: 'Raleway', sans-serif;
+      padding: 16px;
+      margin: 5px 0px;
+      display: flex;
+    }
+    &__header-photo {
+      width: 20%;
+    }
+    &__photo-avatars {
+      width: 46px;
+      border-radius: 50%;
+    }
+    &__title {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      &__buttons {
+        display: flex;
+      }
+      &__button {
+        padding: 8px 16px;
+        text-align: center;
+        &:hover {
+          background: #ccc;
+        }
+      }
+    }
+
+    .menu-dashboard {
+    }
   }
   &__dashboard-container {
     width: calc(100% - 300px);
     height: 100%;
     overflow-y: auto;
-  }
-  &__header {
-    font-size: 15px;
-    font-family: 'Raleway', sans-serif;
-    padding: 16px;
-    margin: 5px 0px;
-    display: flex;
-  }
-  &__header-photo {
-    width: 20%;
-  }
-  &__photo-avatars {
-    width: 46px;
-    border-radius: 50%;
-  }
-  &__title {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    &__buttons {
-      display: flex;
-    }
-    &__button {
-      padding: 8px 16px;
-      text-align: center;
-      &:hover {
-        background: #ccc;
-      }
-    }
   }
 }

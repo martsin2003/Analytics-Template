@@ -42,39 +42,39 @@ html {
     transform: translateX(0px);
   }
 }
-.main-container__dashboard-container {
-  width: calc(100% - 300px);
-  height: 100%;
-  overflow-y: auto;
-}
-.main-container__header {
+.main-container__menu__header {
   font-size: 15px;
   font-family: "Raleway", sans-serif;
   padding: 16px;
   margin: 5px 0px;
   display: flex;
 }
-.main-container__header-photo {
+.main-container__menu__header-photo {
   width: 20%;
 }
-.main-container__photo-avatars {
+.main-container__menu__photo-avatars {
   width: 46px;
   border-radius: 50%;
 }
-.main-container__title {
+.main-container__menu__title {
   display: flex;
   text-align: center;
   flex-direction: column;
 }
-.main-container__title__buttons {
+.main-container__menu__title__buttons {
   display: flex;
 }
-.main-container__title__button {
+.main-container__menu__title__button {
   padding: 8px 16px;
   text-align: center;
 }
-.main-container__title__button:hover {
+.main-container__menu__title__button:hover {
   background: #ccc;
+}
+.main-container__dashboard-container {
+  width: calc(100% - 300px);
+  height: 100%;
+  overflow-y: auto;
 }
 
 /*# sourceMappingURL=index.css.map */
