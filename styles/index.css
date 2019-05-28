@@ -52,10 +52,10 @@ html {
   font-family: "Raleway", sans-serif;
   padding: 16px;
   margin: 5px 0px;
+  display: flex;
 }
 .main-container__header-photo {
-  width: 34%;
-  align-items: center;
+  width: 20%;
 }
 .main-container__photo-avatars {
   width: 46px;
@@ -64,20 +64,17 @@ html {
 .main-container__title {
   display: flex;
   text-align: center;
-  justify-content: center;
+  flex-direction: column;
 }
-.main-container__button {
-  padding: 8px 16px;
+.main-container__title__buttons {
   display: flex;
+}
+.main-container__title__button {
+  padding: 8px 16px;
   text-align: center;
 }
-.main-container__fa {
-  color: #000;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
+.main-container__title__button:hover {
+  background: #ccc;
 }
 
 /*# sourceMappingURL=index.css.map */

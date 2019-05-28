@@ -52,10 +52,10 @@ html {
     font-family: 'Raleway', sans-serif;
     padding: 16px;
     margin: 5px 0px;
+    display: flex;
   }
   &__header-photo {
-    width: 34%;
-    align-items: center;
+    width: 20%;
   }
   &__photo-avatars {
     width: 46px;
@@ -64,19 +64,16 @@ html {
   &__title {
     display: flex;
     text-align: center;
-    justify-content: center;
-  }
-  &__button {
-    padding: 8px 16px;
-    display: flex;
-    text-align: center;
-  }
-  &__fa {
-    color: #000;
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
+    flex-direction: column;
+    &__buttons {
+      display: flex;
+    }
+    &__button {
+      padding: 8px 16px;
+      text-align: center;
+      &:hover {
+        background: #ccc;
+      }
+    }
   }
 }
