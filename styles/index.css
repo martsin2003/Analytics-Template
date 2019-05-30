@@ -106,4 +106,40 @@ html {
   overflow-y: auto;
 }
 
+.main-container__dashboard-container__title-text {
+  padding: 22px 16px 0px;
+}
+.main-container__dashboard-container p {
+  font-size: 18px;
+}
+.main-container__dashboard-container__container {
+  margin: 0px 0px 16px;
+  padding: 0px 8px;
+}
+.main-container__dashboard-container__container-cards {
+  width: 25%;
+  padding: 16px;
+  color: #fff;
+  background: #f44336;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.main-container__dashboard-container__first-card {
+  color: #fff;
+  background: #f44336;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding: 0.01em 16px;
+  font-size: 48px;
+}
+.main-container__dashboard-container span {
+  font-family: "Raleway", sans-serif;
+  margin: 10px 0px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=index.css.map */
