@@ -100,46 +100,56 @@ html {
 .main-container__menu .menu-dashboard__button i {
   margin-right: 10px;
 }
-.main-container__dashboard-container {
-  width: calc(100% - 300px);
-  height: 100%;
-  overflow-y: auto;
-}
 
-.main-container__dashboard-container__title-text {
-  padding: 22px 16px 0px;
+.dashboard-container {
+  width: calc(100% - 300px);
 }
-.main-container__dashboard-container p {
-  font-size: 18px;
-}
-.main-container__dashboard-container__container {
-  margin: 0px 0px 16px;
-  padding: 0px 8px;
-}
-.main-container__dashboard-container__container-cards {
-  width: 25%;
-  padding: 16px;
-  color: #fff;
-  background: #f44336;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-.main-container__dashboard-container__first-card {
-  color: #fff;
-  background: #f44336;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding: 0.01em 16px;
-  font-size: 48px;
-}
-.main-container__dashboard-container span {
+.dashboard-container__title {
   font-family: "Raleway", sans-serif;
-  margin: 10px 0px;
-  font-size: 24px;
+  font-size: 18px;
+  padding: 30px 15px 0px;
+}
+.dashboard-container__first-cards {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+}
+.dashboard-container__first-cards .dashboard-card {
+  flex: 1;
+  box-sizing: border-box;
+  margin: 7.5px;
+  padding: 16px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+.dashboard-container__first-cards .dashboard-card:nth-child(1) {
+  background: #f44336;
+  margin-left: 15px;
+}
+.dashboard-container__first-cards .dashboard-card:nth-child(2) {
+  background: #2196f3;
+}
+.dashboard-container__first-cards .dashboard-card:nth-child(3) {
+  background: #009688;
+}
+.dashboard-container__first-cards .dashboard-card:nth-child(4) {
+  background: #ff9800;
+  margin-right: 15px;
+}
+.dashboard-container__first-cards .dashboard-card__card-header {
+  display: flex;
+  justify-content: space-between;
+}
+.dashboard-container__first-cards .dashboard-card__icon {
+  font-size: 48px;
+  line-height: 1;
+}
+.dashboard-container__first-cards .dashboard-card__quantity-action {
+  font-size: 24px;
+  margin: 10px 0px;
+}
+.dashboard-container__first-cards .dashboard-card__title {
+  font-size: 20px;
+  padding: 10px 0px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=index.css.map */
