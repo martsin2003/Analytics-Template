@@ -42,9 +42,55 @@ html {
       }
     }
   }
-  &__dashboard-container {
-    width: calc(100% - 300px);
-    height: 100%;
-    overflow-y: auto;
+}
+
+.dashboard-container {
+  width: calc(100% - 300px);
+  &__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    padding: 30px 15px 0px;
+  }
+  &__first-cards {
+    display: flex;
+    .dashboard-card {
+      flex: 1;
+      box-sizing: border-box;
+      margin: 7.5px;
+      padding: 16px;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      &:nth-child(1) {
+        background: #f44336;
+        margin-left: 15px;
+      }
+      &:nth-child(2) {
+        background: #2196f3;
+      }
+      &:nth-child(3) {
+        background: #009688;
+      }
+      &:nth-child(4) {
+        background: #ff9800;
+        margin-right: 15px;
+      }
+      &__card-header {
+        display: flex;
+        justify-content: space-between;
+      }
+      &__icon {
+        font-size: 48px;
+        line-height: 1;
+      }
+      &__quantity-action {
+        font-size: 24px;
+        margin: 10px 0px;
+      }
+      &__title {
+        font-size: 20px;
+        padding: 10px 0px;
+        font-weight: 400;
+      }
+    }
   }
 }

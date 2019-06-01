@@ -1,51 +1,17 @@
-body,
-html {
-  margin: 0;
-  height: 100%;
-}
+/* Error: expected "{".
+ *    ,
+ * 99 | >>>>>>> Stashed changes
+ *    |                        ^
+ *    '
+ *   index.scss 99:24  root stylesheet */
 
-.header {
-  width: 100%;
-  color: #fff;
-  background: #000;
-  font-size: 18px;
-  font-family: "Raleway", sans-serif;
-  display: flex;
-  justify-content: space-between;
+body::before {
+  font-family: 'Source Code Pro', 'SF Mono', Monaco, Inconsolata, 'Fira Mono',
+    'Droid Sans Mono', monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 99 \2502  >>>>>>> Stashed changes\a    \2502                         ^\a    \2575 \a   index.scss 99:24  root stylesheet';
 }
-.header .logo {
-  color: #fff;
-  font-family: 18px;
-  padding: 8px 16px;
-}
-
-.main-container {
-  width: 100%;
-  height: calc(100vh - 43px);
-  background-color: #f1f1f1;
-  display: flex;
-  justify-content: space-between;
-}
-.main-container__menu {
-  width: 300px;
-  height: 100%;
-  background: blue;
-  transform: translateX(-300px);
-  animation: translate 0.4s;
-  animation-fill-mode: forwards;
-}
-@keyframes translate {
-  from {
-    transform: translateX(-300px);
-  }
-  to {
-    transform: translateX(0px);
-  }
-}
-.main-container__dashboard-container {
-  width: calc(100% - 300px);
-  height: 100%;
-  overflow-y: auto;
-}
-
-/*# sourceMappingURL=index.css.map */
