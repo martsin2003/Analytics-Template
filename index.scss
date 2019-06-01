@@ -29,7 +29,7 @@ html {
   &__menu {
     width: 300px;
     height: 100%;
-    background: blue;
+    background: #fff;
     transform: translateX(-300px);
     animation: translate 0.4s;
     animation-fill-mode: forwards;
@@ -41,10 +41,115 @@ html {
         transform: translateX(0px);
       }
     }
+    &__header {
+      font-size: 15px;
+      font-family: 'Raleway', sans-serif;
+      padding: 16px;
+      margin: 5px 0px;
+      display: flex;
+    }
+    &__header-photo {
+      width: 20%;
+    }
+    &__photo-avatars {
+      width: 46px;
+      border-radius: 50%;
+    }
+    &__title {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      &__buttons {
+        display: flex;
+      }
+      &__button {
+        padding: 8px 16px;
+        text-align: center;
+        &:hover {
+          background: #ccc;
+        }
+      }
+    }
+
+    .menu-dashboard {
+      display: flex;
+      flex-direction: column;
+      &__title {
+        padding: 10px 16px;
+        box-sizing: border-box;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+      }
+      &__button {
+        padding: 8px 16px;
+        font-size: 15px;
+        line-height: 1.5;
+        font-family: 'Raleway', sans-serif;
+        cursor: pointer;
+        &:nth-child(2) {
+          background: #2196f3;
+          color: white;
+        }
+        &:hover {
+          background: #ccc;
+          color: #000;
+        }
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
   }
-  &__dashboard-container {
-    width: calc(100% - 300px);
-    height: 100%;
-    overflow-y: auto;
+}
+
+.dashboard-container {
+  width: calc(100% - 300px);
+  &__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    padding: 30px 15px 0px;
+  }
+  &__first-cards {
+    display: flex;
+    .dashboard-card {
+      flex: 1;
+      box-sizing: border-box;
+      margin: 7.5px;
+      padding: 16px;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      &:nth-child(1) {
+        background: #f44336;
+        margin-left: 15px;
+      }
+      &:nth-child(2) {
+        background: #2196f3;
+      }
+      &:nth-child(3) {
+        background: #009688;
+      }
+      &:nth-child(4) {
+        background: #ff9800;
+        margin-right: 15px;
+      }
+      &__card-header {
+        display: flex;
+        justify-content: space-between;
+      }
+      &__icon {
+        font-size: 48px;
+        line-height: 1;
+      }
+      &__quantity-action {
+        font-size: 24px;
+        margin: 10px 0px;
+      }
+      &__title {
+        font-size: 20px;
+        padding: 10px 0px;
+        font-weight: 400;
+      }
+    }
   }
 }
